@@ -9,3 +9,6 @@ use CodeIgniter\Router\RouteCollection;
 // $routes->get('/', 'Home::index');
 
 $routes->get('/', 'landingpage::index');
+$routes->get('/mulai', 'landingpage::mulai');
+$routes->post('/proses', 'SPK::proses');
+$routes->post('/proses/pdf', 'SPK::pdf');
