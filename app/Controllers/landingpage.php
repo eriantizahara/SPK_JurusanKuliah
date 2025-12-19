@@ -10,4 +10,8 @@ class landingpage extends BaseController
     {
         return view('layout/v_landingpage');
     }
+    public function mulai(): string
+    {
+        return view('pages/v_form');
+    }
 }
