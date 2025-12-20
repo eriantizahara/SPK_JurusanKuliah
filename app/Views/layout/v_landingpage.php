@@ -1,11 +1,10 @@
-
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
-  <title>Penentuan Jurusan Kuliah</title>
+  <title>JurusanKu</title>
   <meta name="description" content="">
   <meta name="keywords" content="">
 
@@ -52,12 +51,12 @@
         <ul>
           <li><a href="#hero" class="active">Home</a></li>
           <li><a href="#about">About</a></li>
-          <li><a href="#services">Services</a></li>
+          <!-- <li><a href="#services">Services</a></li> -->
           <li><a href="#portfolio">Portfolio</a></li>
           <li><a href="#team">Team</a></li>
-          <li><a href="#pricing">Pricing</a></li>
-          <li><a href="blog.html">Blog</a></li>
-          <li class="dropdown"><a href="#"><span>Dropdown</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+          <!-- <li><a href="#pricing">Pricing</a></li> -->
+          <!-- <li><a href="blog.html">Blog</a></li> -->
+          <!-- <li class="dropdown"><a href="#"><span>Dropdown</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
             <ul>
               <li><a href="#">Dropdown 1</a></li>
               <li class="dropdown"><a href="#"><span>Deep Dropdown</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
@@ -73,13 +72,13 @@
               <li><a href="#">Dropdown 3</a></li>
               <li><a href="#">Dropdown 4</a></li>
             </ul>
-          </li>
+          </li> -->
           <li><a href="#contact">Contact</a></li>
         </ul>
         <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
       </nav>
 
-      <a class="btn-getstarted" href="#about">Get Started</a>
+      <!-- <a class="btn-getstarted" href="#about">Get Started</a> -->
 
     </div>
   </header>
@@ -92,10 +91,10 @@
       <div class="container">
         <div class="row gy-4">
           <div class="col-lg-6 order-2 order-lg-1 d-flex flex-column justify-content-center" data-aos="zoom-out">
-            <h1>Kamu Bingung dengan mau ngambil Jurusan Kuliah apa?</h1>
+            <h1>Masih Bingung Menentukan Jurusan Kuliah Apa?</h1>
             <p>Temukan minat kamu dengan test berikut</p>
             <div class="d-flex">
-              <a href="<?=site_url('/mulai')?>" class="btn-get-started">Mulai</a>
+              <a href="<?= site_url('/mulai') ?>" class="btn-get-started">Mulai</a>
             </div>
           </div>
           <div class="col-lg-6 order-1 order-lg-2 hero-img" data-aos="zoom-out" data-aos-delay="200">
@@ -163,7 +162,8 @@
 
       </div>
 
-    </section><!-- /Clients Section -->
+    </section>
+    <!-- /Clients Section -->
 
     <!-- About Section -->
     <section id="about" class="about section">
@@ -178,20 +178,46 @@
         <div class="row gy-4">
 
           <div class="col-lg-6 content" data-aos="fade-up" data-aos-delay="100">
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-              magna aliqua.
+            <p style="text-align: justify;">
+              Sistem ini dirancang untuk membantu siswa dalam menentukan jurusan kuliah yang paling sesuai
+              berdasarkan minat akademik, kepribadian, tujuan karier, kemampuan, serta ketertarikan terhadap
+              bidang industri tertentu.
             </p>
+
             <ul>
-              <li><i class="bi bi-check2-circle"></i> <span>Ullamco laboris nisi ut aliquip ex ea commodo consequat.</span></li>
-              <li><i class="bi bi-check2-circle"></i> <span>Duis aute irure dolor in reprehenderit in voluptate velit.</span></li>
-              <li><i class="bi bi-check2-circle"></i> <span>Ullamco laboris nisi ut aliquip ex ea commodo</span></li>
+              <li style="text-align: justify;">
+                <i class="bi bi-check2-circle"></i>
+                <span>
+                  Memberikan rekomendasi jurusan secara objektif berdasarkan data dan kriteria yang dipilih.
+                </span>
+              </li>
+              <li style="text-align: justify;">
+                <i class="bi bi-check2-circle"></i>
+                <span>
+                  Membantu siswa memahami potensi diri sebelum menentukan pilihan jurusan kuliah.
+                </span>
+              </li>
+              <li style="text-align: justify;">
+                <i class="bi bi-check2-circle"></i>
+                <span>
+                  Mengurangi risiko salah jurusan dengan proses analisis yang sistematis dan terstruktur.
+                </span>
+              </li>
             </ul>
           </div>
 
           <div class="col-lg-6" data-aos="fade-up" data-aos-delay="200">
-            <p>Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. </p>
-            <a href="#" class="read-more"><span>Read More</span><i class="bi bi-arrow-right"></i></a>
+            <p style="text-align: justify;">
+              Melalui sistem penunjang keputusan ini, pengguna dapat memperoleh hasil rekomendasi jurusan
+              yang akurat dan mudah dipahami. Sistem bekerja dengan mengolah data input pengguna
+              menggunakan metode perhitungan yang telah ditentukan sehingga hasil yang diperoleh
+              dapat dijadikan sebagai bahan pertimbangan dalam pengambilan keputusan pendidikan.
+            </p>
+
+            <a href="#" class="read-more">
+              <span>Mulai Tes Sekarang</span>
+              <i class="bi bi-arrow-right"></i>
+            </a>
           </div>
 
         </div>
@@ -210,35 +236,51 @@
           <div class="col-lg-7 d-flex flex-column justify-content-center order-2 order-lg-1">
 
             <div class="content px-xl-5" data-aos="fade-up" data-aos-delay="100">
-              <h3><span>Eum ipsam laborum deleniti </span><strong>velit pariatur architecto aut nihil</strong></h3>
+              <h3>
+                <span>Bingung menentukan jurusan kuliah?</span>
+                <strong>Kami bantu Anda menemukan pilihan terbaik</strong>
+              </h3>
               <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Duis aute irure dolor in reprehenderit
+                Sistem penunjang keputusan ini dirancang untuk membantu siswa menentukan jurusan kuliah
+                yang paling sesuai berdasarkan minat, kepribadian, kemampuan, tujuan karier, serta minat
+                terhadap bidang industri tertentu secara objektif dan terstruktur.
               </p>
             </div>
 
             <div class="faq-container px-xl-5" data-aos="fade-up" data-aos-delay="200">
 
               <div class="faq-item faq-active">
-
-                <h3><span>01</span> Non consectetur a erat nam at lectus urna duis?</h3>
+                <h3><span>01</span> Apa tujuan dari sistem rekomendasi jurusan kuliah ini?</h3>
                 <div class="faq-content">
-                  <p>Feugiat pretium nibh ipsum consequat. Tempus iaculis urna id volutpat lacus laoreet non curabitur gravida. Venenatis lectus magna fringilla urna porttitor rhoncus dolor purus non.</p>
+                  <p>
+                    Sistem ini bertujuan untuk membantu siswa memperoleh rekomendasi jurusan kuliah
+                    yang sesuai dengan potensi diri sehingga dapat mengurangi risiko salah jurusan
+                    dan meningkatkan kesiapan dalam menentukan masa depan pendidikan.
+                  </p>
                 </div>
                 <i class="faq-toggle bi bi-chevron-right"></i>
               </div><!-- End Faq item-->
 
               <div class="faq-item">
-                <h3><span>02</span> Feugiat scelerisque varius morbi enim nunc faucibus a pellentesque?</h3>
+                <h3><span>02</span> Data apa saja yang digunakan dalam proses rekomendasi?</h3>
                 <div class="faq-content">
-                  <p>Dolor sit amet consectetur adipiscing elit pellentesque habitant morbi. Id interdum velit laoreet id donec ultrices. Fringilla phasellus faucibus scelerisque eleifend donec pretium. Est pellentesque elit ullamcorper dignissim. Mauris ultrices eros in cursus turpis massa tincidunt dui.</p>
+                  <p>
+                    Data yang digunakan meliputi minat akademik, kepribadian, tujuan karier, kemampuan
+                    dominan, serta ketertarikan terhadap bidang industri. Seluruh data tersebut dianalisis
+                    untuk menghasilkan rekomendasi jurusan yang relevan.
+                  </p>
                 </div>
                 <i class="faq-toggle bi bi-chevron-right"></i>
               </div><!-- End Faq item-->
 
               <div class="faq-item">
-                <h3><span>03</span> Dolor sit amet consectetur adipiscing elit pellentesque?</h3>
+                <h3><span>03</span> Apakah hasil rekomendasi dapat dijadikan acuan pemilihan jurusan?</h3>
                 <div class="faq-content">
-                  <p>Eleifend mi in nulla posuere sollicitudin aliquam ultrices sagittis orci. Faucibus pulvinar elementum integer enim. Sem nulla pharetra diam sit amet nisl suscipit. Rutrum tellus pellentesque eu tincidunt. Lectus urna duis convallis convallis tellus. Urna molestie at elementum eu facilisis sed odio morbi quis</p>
+                  <p>
+                    Hasil rekomendasi dapat dijadikan sebagai bahan pertimbangan awal dalam memilih
+                    jurusan kuliah. Namun, keputusan akhir tetap berada pada siswa dan disarankan
+                    untuk dikonsultasikan dengan guru atau konselor pendidikan.
+                  </p>
                 </div>
                 <i class="faq-toggle bi bi-chevron-right"></i>
               </div><!-- End Faq item-->
@@ -246,6 +288,7 @@
             </div>
 
           </div>
+
 
           <div class="col-lg-5 order-1 order-lg-2 why-us-img">
             <img src="<?= base_url() ?>/assets/img/why-us.png" class="img-fluid" alt="" data-aos="zoom-in" data-aos-delay="100">
@@ -314,15 +357,16 @@
     </section><!-- /Skills Section -->
 
     <!-- Services Section -->
-    <section id="services" class="services section light-background">
+    <!-- <section id="services" class="services section light-background"> -->
 
-      <!-- Section Title -->
-      <div class="container section-title" data-aos="fade-up">
+    <!-- Section Title -->
+    <!-- <div class="container section-title" data-aos="fade-up">
         <h2>Services</h2>
         <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p>
-      </div><!-- End Section Title -->
+      </div> -->
+    <!-- End Section Title -->
 
-      <div class="container">
+    <!-- <div class="container">
 
         <div class="row gy-4">
 
@@ -332,37 +376,42 @@
               <h4><a href="" class="stretched-link">Lorem Ipsum</a></h4>
               <p>Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi</p>
             </div>
-          </div><!-- End Service Item -->
+          </div> -->
+    <!-- End Service Item -->
 
-          <div class="col-xl-3 col-md-6 d-flex" data-aos="fade-up" data-aos-delay="200">
+    <!-- <div class="col-xl-3 col-md-6 d-flex" data-aos="fade-up" data-aos-delay="200">
             <div class="service-item position-relative">
               <div class="icon"><i class="bi bi-bounding-box-circles icon"></i></div>
               <h4><a href="" class="stretched-link">Sed ut perspici</a></h4>
               <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore</p>
             </div>
-          </div><!-- End Service Item -->
+          </div> -->
+    <!-- End Service Item -->
 
-          <div class="col-xl-3 col-md-6 d-flex" data-aos="fade-up" data-aos-delay="300">
+    <!-- <div class="col-xl-3 col-md-6 d-flex" data-aos="fade-up" data-aos-delay="300">
             <div class="service-item position-relative">
               <div class="icon"><i class="bi bi-calendar4-week icon"></i></div>
               <h4><a href="" class="stretched-link">Magni Dolores</a></h4>
               <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia</p>
             </div>
-          </div><!-- End Service Item -->
+          </div> -->
+    <!-- End Service Item -->
 
-          <div class="col-xl-3 col-md-6 d-flex" data-aos="fade-up" data-aos-delay="400">
+    <!-- <div class="col-xl-3 col-md-6 d-flex" data-aos="fade-up" data-aos-delay="400">
             <div class="service-item position-relative">
               <div class="icon"><i class="bi bi-broadcast icon"></i></div>
               <h4><a href="" class="stretched-link">Nemo Enim</a></h4>
               <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis</p>
             </div>
-          </div><!-- End Service Item -->
+          </div> -->
+    <!-- End Service Item -->
 
-        </div>
+    <!-- </div>
 
       </div>
 
-    </section><!-- /Services Section -->
+    </section> -->
+    <!-- /Services Section -->
 
     <!-- Work Process Section -->
     <section id="work-process" class="work-process section">
@@ -611,76 +660,101 @@
       <!-- Section Title -->
       <div class="container section-title" data-aos="fade-up">
         <h2>Team</h2>
-        <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p>
+        <p>Tim yang berperan dalam perancangan sistem penunjang keputusan
+          untuk membantu siswa menentukan jurusan kuliah yang sesuai dengan potensi dan minatnya</p>
       </div><!-- End Section Title -->
 
       <div class="container">
 
         <div class="row gy-4">
 
+          <!-- Programmer 1 -->
           <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
             <div class="team-member d-flex align-items-start">
-              <div class="pic"><img src="<?= base_url() ?>/assets/img/person/person-m-7.webp" class="img-fluid" alt=""></div>
+              <div class="pic">
+                <img src="<?= base_url() ?>/assets/img/person/person-m-7.webp" class="img-fluid" alt="Programmer">
+              </div>
               <div class="member-info">
-                <h4>Walter White</h4>
-                <span>Chief Executive Officer</span>
-                <p>Explicabo voluptatem mollitia et repellat qui dolorum quasi</p>
+                <h4>Erianti Zahara</h4>
+                <span>Programmer</span>
+                <p>
+                  Bertanggung jawab dalam pengembangan sistem penunjang keputusan,
+                  implementasi logika rekomendasi jurusan, serta integrasi frontend
+                  dan backend agar sistem berjalan optimal.
+                </p>
                 <div class="social">
-                  <a href=""><i class="bi bi-twitter-x"></i></a>
-                  <a href=""><i class="bi bi-facebook"></i></a>
-                  <a href=""><i class="bi bi-instagram"></i></a>
-                  <a href=""> <i class="bi bi-linkedin"></i> </a>
+                  <a href="#"><i class="bi bi-github"></i></a>
+                  <a href="#"><i class="bi bi-instagram"></i></a>
+                  <a href="#"><i class="bi bi-linkedin"></i></a>
                 </div>
               </div>
             </div>
           </div><!-- End Team Member -->
 
+          <!-- Programmer 2 -->
           <div class="col-lg-6" data-aos="fade-up" data-aos-delay="200">
             <div class="team-member d-flex align-items-start">
-              <div class="pic"><img src="<?= base_url() ?>/assets/img/person/person-f-8.webp" class="img-fluid" alt=""></div>
+              <div class="pic">
+                <img src="<?= base_url() ?>/assets/img/person/person-f-8.webp" class="img-fluid" alt="Programmer">
+              </div>
               <div class="member-info">
-                <h4>Sarah Jhonson</h4>
-                <span>Product Manager</span>
-                <p>Aut maiores voluptates amet et quis praesentium qui senda para</p>
+                <h4>Zara Ayunda</h4>
+                <span>Programmer</span>
+                <p>
+                  Mengelola pengolahan data input pengguna, pengembangan fitur sistem,
+                  serta memastikan hasil rekomendasi jurusan sesuai dengan kriteria
+                  dan kebutuhan pengguna.
+                </p>
                 <div class="social">
-                  <a href=""><i class="bi bi-twitter-x"></i></a>
-                  <a href=""><i class="bi bi-facebook"></i></a>
-                  <a href=""><i class="bi bi-instagram"></i></a>
-                  <a href=""> <i class="bi bi-linkedin"></i> </a>
+                  <a href="#"><i class="bi bi-github"></i></a>
+                  <a href="#"><i class="bi bi-instagram"></i></a>
+                  <a href="#"><i class="bi bi-linkedin"></i></a>
                 </div>
               </div>
             </div>
           </div><!-- End Team Member -->
 
+          <!-- UI Designer -->
           <div class="col-lg-6" data-aos="fade-up" data-aos-delay="300">
             <div class="team-member d-flex align-items-start">
-              <div class="pic"><img src="<?= base_url() ?>/assets/img/person/person-m-6.webp" class="img-fluid" alt=""></div>
+              <div class="pic">
+                <img src="<?= base_url() ?>/assets/img/person/person-m-6.webp" class="img-fluid" alt="UI Designer">
+              </div>
               <div class="member-info">
-                <h4>William Anderson</h4>
-                <span>CTO</span>
-                <p>Quisquam facilis cum velit laborum corrupti fuga rerum quia</p>
+                <h4>Debora Septiani Daeli</h4>
+                <span>UI Designer</span>
+                <p>
+                  Merancang tampilan antarmuka aplikasi agar mudah digunakan,
+                  konsisten secara visual, serta memberikan pengalaman pengguna
+                  yang nyaman dalam melakukan tes rekomendasi jurusan.
+                </p>
                 <div class="social">
-                  <a href=""><i class="bi bi-twitter-x"></i></a>
-                  <a href=""><i class="bi bi-facebook"></i></a>
-                  <a href=""><i class="bi bi-instagram"></i></a>
-                  <a href=""> <i class="bi bi-linkedin"></i> </a>
+                  <a href="#"><i class="bi bi-dribbble"></i></a>
+                  <a href="#"><i class="bi bi-instagram"></i></a>
+                  <a href="#"><i class="bi bi-linkedin"></i></a>
                 </div>
               </div>
             </div>
           </div><!-- End Team Member -->
 
+          <!-- System Analyst -->
           <div class="col-lg-6" data-aos="fade-up" data-aos-delay="400">
             <div class="team-member d-flex align-items-start">
-              <div class="pic"><img src="<?= base_url() ?>/assets/img/person/person-f-4.webp" class="img-fluid" alt=""></div>
+              <div class="pic">
+                <img src="<?= base_url() ?>/assets/img/person/person-f-4.webp" class="img-fluid" alt="System Analyst">
+              </div>
               <div class="member-info">
-                <h4>Amanda Jepson</h4>
-                <span>Accountant</span>
-                <p>Dolorum tempora officiis odit laborum officiis et et accusamus</p>
+                <h4>Nama Anggota 4</h4>
+                <span>System Analyst</span>
+                <p>
+                  Menganalisis kebutuhan sistem, menyusun alur proses rekomendasi jurusan,
+                  serta memastikan sistem yang dikembangkan sesuai dengan tujuan
+                  dan kebutuhan pengguna.
+                </p>
                 <div class="social">
-                  <a href=""><i class="bi bi-twitter-x"></i></a>
-                  <a href=""><i class="bi bi-facebook"></i></a>
-                  <a href=""><i class="bi bi-instagram"></i></a>
-                  <a href=""> <i class="bi bi-linkedin"></i> </a>
+                  <a href="#"><i class="bi bi-diagram-3"></i></a>
+                  <a href="#"><i class="bi bi-instagram"></i></a>
+                  <a href="#"><i class="bi bi-linkedin"></i></a>
                 </div>
               </div>
             </div>
@@ -693,15 +767,16 @@
     </section><!-- /Team Section -->
 
     <!-- Pricing Section -->
-    <section id="pricing" class="pricing section light-background">
+    <!-- <section id="pricing" class="pricing section light-background"> -->
 
-      <!-- Section Title -->
-      <div class="container section-title" data-aos="fade-up">
+    <!-- Section Title -->
+    <!-- <div class="container section-title" data-aos="fade-up">
         <h2>Pricing</h2>
         <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p>
-      </div><!-- End Section Title -->
+      </div> -->
+    <!-- End Section Title -->
 
-      <div class="container">
+    <!-- <div class="container">
 
         <div class="row gy-4">
 
@@ -718,9 +793,10 @@
               </ul>
               <a href="#" class="buy-btn">Buy Now</a>
             </div>
-          </div><!-- End Pricing Item -->
+          </div> -->
+    <!-- End Pricing Item -->
 
-          <div class="col-lg-4" data-aos="zoom-in" data-aos-delay="200">
+    <!-- <div class="col-lg-4" data-aos="zoom-in" data-aos-delay="200">
             <div class="pricing-item featured">
               <h3>Business Plan</h3>
               <h4><sup>$</sup>29<span> / month</span></h4>
@@ -733,9 +809,10 @@
               </ul>
               <a href="#" class="buy-btn">Buy Now</a>
             </div>
-          </div><!-- End Pricing Item -->
+          </div> -->
+    <!-- End Pricing Item -->
 
-          <div class="col-lg-4" data-aos="zoom-in" data-aos-delay="300">
+    <!-- <div class="col-lg-4" data-aos="zoom-in" data-aos-delay="300">
             <div class="pricing-item">
               <h3>Developer Plan</h3>
               <h4><sup>$</sup>49<span> / month</span></h4>
@@ -748,24 +825,27 @@
               </ul>
               <a href="#" class="buy-btn">Buy Now</a>
             </div>
-          </div><!-- End Pricing Item -->
+          </div> -->
+    <!-- End Pricing Item -->
 
-        </div>
+    <!-- </div>
 
       </div>
 
-    </section><!-- /Pricing Section -->
+    </section> -->
+    <!-- /Pricing Section -->
 
     <!-- Testimonials Section -->
-    <section id="testimonials" class="testimonials section">
+    <!-- <section id="testimonials" class="testimonials section"> -->
 
-      <!-- Section Title -->
-      <div class="container section-title" data-aos="fade-up">
+    <!-- Section Title -->
+    <!-- <div class="container section-title" data-aos="fade-up">
         <h2>Testimonials</h2>
         <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p>
-      </div><!-- End Section Title -->
+      </div> -->
+    <!-- End Section Title -->
 
-      <div class="container" data-aos="fade-up" data-aos-delay="100">
+    <!-- <div class="container" data-aos="fade-up" data-aos-delay="100">
 
         <div class="swiper init-swiper">
           <script type="application/json" class="swiper-config">
@@ -799,9 +879,10 @@
                   <i class="bi bi-quote quote-icon-right"></i>
                 </p>
               </div>
-            </div><!-- End testimonial item -->
+            </div> -->
+    <!-- End testimonial item -->
 
-            <div class="swiper-slide">
+    <!-- <div class="swiper-slide">
               <div class="testimonial-item">
                 <img src="<?= base_url() ?>/assets/img/person/person-f-5.webp" class="testimonial-img" alt="">
                 <h3>Sara Wilsson</h3>
@@ -815,9 +896,10 @@
                   <i class="bi bi-quote quote-icon-right"></i>
                 </p>
               </div>
-            </div><!-- End testimonial item -->
+            </div> -->
+    <!-- End testimonial item -->
 
-            <div class="swiper-slide">
+    <!-- <div class="swiper-slide">
               <div class="testimonial-item">
                 <img src="<?= base_url() ?>/assets/img/person/person-f-12.webp" class="testimonial-img" alt="">
                 <h3>Jena Karlis</h3>
@@ -831,9 +913,10 @@
                   <i class="bi bi-quote quote-icon-right"></i>
                 </p>
               </div>
-            </div><!-- End testimonial item -->
+            </div> -->
+    <!-- End testimonial item -->
 
-            <div class="swiper-slide">
+    <!-- <div class="swiper-slide">
               <div class="testimonial-item">
                 <img src="<?= base_url() ?>/assets/img/person/person-m-12.webp" class="testimonial-img" alt="">
                 <h3>Matt Brandon</h3>
@@ -847,9 +930,10 @@
                   <i class="bi bi-quote quote-icon-right"></i>
                 </p>
               </div>
-            </div><!-- End testimonial item -->
+            </div> -->
+    <!-- End testimonial item -->
 
-            <div class="swiper-slide">
+    <!-- <div class="swiper-slide">
               <div class="testimonial-item">
                 <img src="<?= base_url() ?>/assets/img/person/person-m-13.webp" class="testimonial-img" alt="">
                 <h3>John Larson</h3>
@@ -863,26 +947,29 @@
                   <i class="bi bi-quote quote-icon-right"></i>
                 </p>
               </div>
-            </div><!-- End testimonial item -->
+            </div> -->
+    <!-- End testimonial item -->
 
-          </div>
+    <!-- </div>
           <div class="swiper-pagination"></div>
         </div>
 
       </div>
 
-    </section><!-- /Testimonials Section -->
+    </section> -->
+    <!-- /Testimonials Section -->
 
     <!-- Faq 2 Section -->
-    <section id="faq-2" class="faq-2 section light-background">
+    <!-- <section id="faq-2" class="faq-2 section light-background"> -->
 
-      <!-- Section Title -->
-      <div class="container section-title" data-aos="fade-up">
+    <!-- Section Title -->
+    <!-- <div class="container section-title" data-aos="fade-up">
         <h2>Frequently Asked Questions</h2>
         <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
-      </div><!-- End Section Title -->
+      </div> -->
+    <!-- End Section Title -->
 
-      <div class="container">
+    <!-- <div class="container">
 
         <div class="row justify-content-center">
 
@@ -897,45 +984,50 @@
                   <p>Feugiat pretium nibh ipsum consequat. Tempus iaculis urna id volutpat lacus laoreet non curabitur gravida. Venenatis lectus magna fringilla urna porttitor rhoncus dolor purus non.</p>
                 </div>
                 <i class="faq-toggle bi bi-chevron-right"></i>
-              </div><!-- End Faq item-->
+              </div> -->
+    <!-- End Faq item-->
 
-              <div class="faq-item" data-aos="fade-up" data-aos-delay="300">
+    <!-- <div class="faq-item" data-aos="fade-up" data-aos-delay="300">
                 <i class="faq-icon bi bi-question-circle"></i>
                 <h3>Feugiat scelerisque varius morbi enim nunc faucibus a pellentesque?</h3>
                 <div class="faq-content">
                   <p>Dolor sit amet consectetur adipiscing elit pellentesque habitant morbi. Id interdum velit laoreet id donec ultrices. Fringilla phasellus faucibus scelerisque eleifend donec pretium. Est pellentesque elit ullamcorper dignissim. Mauris ultrices eros in cursus turpis massa tincidunt dui.</p>
                 </div>
                 <i class="faq-toggle bi bi-chevron-right"></i>
-              </div><!-- End Faq item-->
+              </div> -->
+    <!-- End Faq item-->
 
-              <div class="faq-item" data-aos="fade-up" data-aos-delay="400">
+    <!-- <div class="faq-item" data-aos="fade-up" data-aos-delay="400">
                 <i class="faq-icon bi bi-question-circle"></i>
                 <h3>Dolor sit amet consectetur adipiscing elit pellentesque?</h3>
                 <div class="faq-content">
                   <p>Eleifend mi in nulla posuere sollicitudin aliquam ultrices sagittis orci. Faucibus pulvinar elementum integer enim. Sem nulla pharetra diam sit amet nisl suscipit. Rutrum tellus pellentesque eu tincidunt. Lectus urna duis convallis convallis tellus. Urna molestie at elementum eu facilisis sed odio morbi quis</p>
                 </div>
                 <i class="faq-toggle bi bi-chevron-right"></i>
-              </div><!-- End Faq item-->
+              </div> -->
+    <!-- End Faq item-->
 
-              <div class="faq-item" data-aos="fade-up" data-aos-delay="500">
+    <!-- <div class="faq-item" data-aos="fade-up" data-aos-delay="500">
                 <i class="faq-icon bi bi-question-circle"></i>
                 <h3>Ac odio tempor orci dapibus. Aliquam eleifend mi in nulla?</h3>
                 <div class="faq-content">
                   <p>Dolor sit amet consectetur adipiscing elit pellentesque habitant morbi. Id interdum velit laoreet id donec ultrices. Fringilla phasellus faucibus scelerisque eleifend donec pretium. Est pellentesque elit ullamcorper dignissim. Mauris ultrices eros in cursus turpis massa tincidunt dui.</p>
                 </div>
                 <i class="faq-toggle bi bi-chevron-right"></i>
-              </div><!-- End Faq item-->
+              </div> -->
+    <!-- End Faq item-->
 
-              <div class="faq-item" data-aos="fade-up" data-aos-delay="600">
+    <!-- <div class="faq-item" data-aos="fade-up" data-aos-delay="600">
                 <i class="faq-icon bi bi-question-circle"></i>
                 <h3>Tempus quam pellentesque nec nam aliquam sem et tortor consequat?</h3>
                 <div class="faq-content">
                   <p>Molestie a iaculis at erat pellentesque adipiscing commodo. Dignissim suspendisse in est ante in. Nunc vel risus commodo viverra maecenas accumsan. Sit amet nisl suscipit adipiscing bibendum est. Purus gravida quis blandit turpis cursus in</p>
                 </div>
                 <i class="faq-toggle bi bi-chevron-right"></i>
-              </div><!-- End Faq item-->
+              </div> -->
+    <!-- End Faq item-->
 
-            </div>
+    <!-- </div>
 
           </div>
 
@@ -943,10 +1035,11 @@
 
       </div>
 
-    </section><!-- /Faq 2 Section -->
+    </section> -->
+    <!-- /Faq 2 Section -->
 
     <!-- Subscribe Section -->
-    <section id="subscribe" class="subscribe section">
+    <!-- <section id="subscribe" class="subscribe section">
       <div class="container" data-aos="fade-up" data-aos-delay="100">
         <div class="row gy-4 justify-content-between align-items-center">
           <div class="col-lg-6">
@@ -971,18 +1064,20 @@
           </div>
         </div>
       </div>
-    </section><!-- /Subscribe Section -->
+    </section> -->
+    <!-- /Subscribe Section -->
 
     <!-- Recent Blog Postst Section -->
-    <section id="recent-blog-postst" class="recent-blog-postst section light-background">
+    <!-- <section id="recent-blog-postst" class="recent-blog-postst section light-background"> -->
 
-      <!-- Section Title -->
-      <div class="container section-title" data-aos="fade-up">
+    <!-- Section Title -->
+    <!-- <div class="container section-title" data-aos="fade-up">
         <h2>Recent Blog Posts</h2>
         <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p>
-      </div><!-- End Section Title -->
+      </div> -->
+    <!-- End Section Title -->
 
-      <div class="container">
+    <!-- <div class="container">
 
         <div class="row gy-5">
 
@@ -1015,9 +1110,10 @@
               </div>
 
             </div>
-          </div><!-- End post item -->
+          </div> -->
+    <!-- End post item -->
 
-          <div class="col-xl-4 col-md-6">
+    <!-- <div class="col-xl-4 col-md-6">
             <div class="post-item position-relative h-100" data-aos="fade-up" data-aos-delay="200">
 
               <div class="post-img position-relative overflow-hidden">
@@ -1046,9 +1142,10 @@
               </div>
 
             </div>
-          </div><!-- End post item -->
+          </div> -->
+    <!-- End post item -->
 
-          <div class="col-xl-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
+    <!-- <div class="col-xl-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
             <div class="post-item position-relative h-100">
 
               <div class="post-img position-relative overflow-hidden">
@@ -1077,13 +1174,15 @@
               </div>
 
             </div>
-          </div><!-- End post item -->
+          </div> -->
+    <!-- End post item -->
 
-        </div>
+    <!-- </div>
 
       </div>
 
-    </section><!-- /Recent Blog Postst Section -->
+    </section> -->
+    <!-- /Recent Blog Postst Section -->
 
     <!-- Contact Section -->
     <section id="contact" class="contact section">
@@ -1091,7 +1190,8 @@
       <!-- Section Title -->
       <div class="container section-title" data-aos="fade-up">
         <h2>Contact</h2>
-        <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p>
+        <p> Hubungi kami untuk mendapatkan informasi lebih lanjut, menyampaikan pertanyaan,
+          atau memberikan masukan terkait sistem rekomendasi jurusan kuliah yang kami kembangkan</p>
       </div><!-- End Section Title -->
 
       <div class="container" data-aos="fade-up" data-aos-delay="100">
@@ -1105,7 +1205,7 @@
                 <i class="bi bi-geo-alt flex-shrink-0"></i>
                 <div>
                   <h3>Address</h3>
-                  <p>A108 Adam Street, New York, NY 535022</p>
+                  <p>Jl. Damar No.69 E Padang, Sumatera Barat</p>
                 </div>
               </div><!-- End Info Item -->
 
@@ -1113,7 +1213,7 @@
                 <i class="bi bi-telephone flex-shrink-0"></i>
                 <div>
                   <h3>Call Us</h3>
-                  <p>+1 5589 55488 55</p>
+                  <p>081234567890</p>
                 </div>
               </div><!-- End Info Item -->
 
@@ -1121,7 +1221,7 @@
                 <i class="bi bi-envelope flex-shrink-0"></i>
                 <div>
                   <h3>Email Us</h3>
-                  <p>info@example.com</p>
+                  <p>jurusanku@gmail.com</p>
                 </div>
               </div><!-- End Info Item -->
 
@@ -1196,27 +1296,27 @@
       <div class="row gy-4">
         <div class="col-lg-4 col-md-6 footer-about">
           <a href="index.html" class="d-flex align-items-center">
-            <span class="sitename">Arsha</span>
+            <span class="sitename">JurusanKu</span>
           </a>
           <div class="footer-contact pt-3">
-            <p>A108 Adam Street</p>
-            <p>New York, NY 535022</p>
-            <p class="mt-3"><strong>Phone:</strong> <span>+1 5589 55488 55</span></p>
-            <p><strong>Email:</strong> <span>info@example.com</span></p>
+            <p>Jl. Damar No.69 E</p>
+            <p>Padang, Sumatera Barat</p>
+            <p class="mt-3"><strong>Phone:</strong> <span>081234567890</span></p>
+            <p><strong>Email:</strong> <span>jurusanku@gmail.com</span></p>
           </div>
         </div>
 
-        <div class="col-lg-2 col-md-3 footer-links">
+        <div class="col-lg-4 col-md-3 footer-links">
           <h4>Useful Links</h4>
           <ul>
             <li><i class="bi bi-chevron-right"></i> <a href="#">Home</a></li>
             <li><i class="bi bi-chevron-right"></i> <a href="#">About us</a></li>
-            <li><i class="bi bi-chevron-right"></i> <a href="#">Services</a></li>
-            <li><i class="bi bi-chevron-right"></i> <a href="#">Terms of service</a></li>
+            <li><i class="bi bi-chevron-right"></i> <a href="#">Portfolio</a></li>
+            <li><i class="bi bi-chevron-right"></i> <a href="#">Team</a></li>
           </ul>
         </div>
 
-        <div class="col-lg-2 col-md-3 footer-links">
+        <!-- <div class="col-lg-2 col-md-3 footer-links">
           <h4>Our Services</h4>
           <ul>
             <li><i class="bi bi-chevron-right"></i> <a href="#">Web Design</a></li>
@@ -1224,11 +1324,12 @@
             <li><i class="bi bi-chevron-right"></i> <a href="#">Product Management</a></li>
             <li><i class="bi bi-chevron-right"></i> <a href="#">Marketing</a></li>
           </ul>
-        </div>
+        </div> -->
 
         <div class="col-lg-4 col-md-12">
           <h4>Follow Us</h4>
-          <p>Cras fermentum odio eu feugiat lide par naso tierra videa magna derita valies</p>
+          <p> Dapatkan informasi dan pembaruan terbaru seputar sistem rekomendasi
+            jurusan kuliah melalui media sosial kami</p>
           <div class="social-links d-flex">
             <a href=""><i class="bi bi-twitter-x"></i></a>
             <a href=""><i class="bi bi-facebook"></i></a>
@@ -1241,13 +1342,13 @@
     </div>
 
     <div class="container copyright text-center mt-4">
-      <p>© <span>Copyright</span> <strong class="px-1 sitename">Arsha</strong> <span>All Rights Reserved</span></p>
+      <p>© <span>Copyright</span> <strong class="px-1 sitename">JurusanKu</strong> <span>All Rights Reserved</span></p>
       <div class="credits">
         <!-- All the links in the footer should remain intact. -->
         <!-- You can delete the links only if you've purchased the pro version. -->
         <!-- Licensing information: https://bootstrapmade.com/license/ -->
         <!-- Purchase the pro version with working PHP/AJAX contact form: [buy-url] -->
-        Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a> Distributed by <a href="https://themewagon.com" target="_blank">ThemeWagon</a>
+        Designed by <a href="https://bootstrapmade.com/">JurusanKu</a> Distributed by <a href="https://themewagon.com" target="_blank">ThemeWagon</a>
       </div>
     </div>
 
