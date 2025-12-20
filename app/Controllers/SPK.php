@@ -78,7 +78,7 @@ class SPK extends BaseController
             $output = $dompdf->output();
 
             return $this->response->setHeader('Content-Type', 'application/pdf')
-                ->setHeader('Content-Disposition', 'attachment; filename="rekomendasi_jurusan.pdf"')
+                ->setHeader('Content-Disposition', 'attachment; filename="Rekomendasi_Jurusan.pdf"')
                 ->setBody($output);
         }
 
