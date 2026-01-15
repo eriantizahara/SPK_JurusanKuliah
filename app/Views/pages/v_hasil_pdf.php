@@ -146,13 +146,17 @@
                         <td>:</td>
                         <td><?= esc($input['kemampuan']) ?></td>
                     </tr>
-                    <tr>
-                        <td>Minat Industri</td>
-                        <td>:</td>
-                        <td><?= esc($input['industri']) ?></td>
-                    </tr>
+
+                    <?php if (!empty($input['industri'])): ?>
+                        <tr>
+                            <td>Minat Industri</td>
+                            <td>:</td>
+                            <td><?= esc($input['industri']) ?></td>
+                        </tr>
+                    <?php endif; ?>
                 </table>
             </div>
+
 
             <p><strong>Hasil rekomendasi jurusan kuliah yang diperoleh adalah sebagai berikut:</strong></p>
 
