@@ -18,13 +18,21 @@ class SPK extends BaseController
             'industri'    => $this->request->getPost('industri'),
         ];
 
-        // Validasi sederhana (aman untuk dosen)
-        foreach ($data as $key => $value) {
-            if (empty($value)) {
-                return redirect()->to('/form')
+        // Validasi wajib
+        $required = ['minat', 'kepribadian', 'karir', 'kemampuan'];
+
+        // industri hanya wajib untuk Saintek & SosHum
+        if (in_array($data['minat'], ['Saintek', 'SosHum'])) {
+            $required[] = 'industri';
+        }
+
+        foreach ($required as $field) {
+            if (empty($data[$field])) {
+                return redirect()->to('/mulai')
                     ->with('error', 'Semua field wajib diisi!');
             }
         }
+
 
         // Proses SPK
         $service = new DecisionTreeService();
@@ -51,12 +59,21 @@ class SPK extends BaseController
             'industri'    => $this->request->getPost('industri'),
         ];
 
-        foreach ($data as $key => $value) {
-            if (empty($value)) {
-                return redirect()->to('/form')
+        // Validasi wajib
+        $required = ['minat', 'kepribadian', 'karir', 'kemampuan'];
+
+        // industri hanya wajib untuk Saintek & SosHum
+        if (in_array($data['minat'], ['Saintek', 'SosHum'])) {
+            $required[] = 'industri';
+        }
+
+        foreach ($required as $field) {
+            if (empty($data[$field])) {
+                return redirect()->to('/mulai')
                     ->with('error', 'Semua field wajib diisi sebelum mengunduh PDF!');
             }
         }
+
 
         $service = new DecisionTreeService();
         $hasil = $service->proses($data);
@@ -77,8 +94,9 @@ class SPK extends BaseController
 
             $output = $dompdf->output();
 
-            return $this->response->setHeader('Content-Type', 'application/pdf')
-                ->setHeader('Content-Disposition', 'attachment; filename="Rekomendasi_Jurusan.pdf"')
+            return $this->response
+                ->setHeader('Content-Type', 'application/pdf')
+                ->setHeader('Content-Disposition', 'inline; filename="Rekomendasi_Jurusan.pdf"')
                 ->setBody($output);
         }
 

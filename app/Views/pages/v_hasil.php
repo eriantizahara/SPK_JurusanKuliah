@@ -47,7 +47,7 @@
                 <h1 class="sitename">JurusanKu</h1>
             </a>
 
-            <nav id="navmenu" class="navmenu">
+            <!-- <nav id="navmenu" class="navmenu">
                 <ul>
                     <li><a href="#hero" class="active">Home</a></li>
                     <li><a href="#about">About</a></li>
@@ -56,7 +56,7 @@
                     <li><a href="#contact">Contact</a></li>
                 </ul>
                 <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
-            </nav>
+            </nav> -->
 
         </div>
     </header>
@@ -73,7 +73,7 @@
                 <h2>Hasil Rekomendasi Jurusan Kuliah</h2>
                 <p>
                     Halaman ini menampilkan ringkasan data yang telah Anda masukkan serta hasil analisis sistem
-                    dalam menentukan jurusan kuliah yang paling sesuai dengan minat, kepribadian, tujuan karier, kemampuan, serta minat industri Anda.
+                    dalam menentukan jurusan kuliah yang sesuai dengan minat, kepribadian, tujuan karier, kemampuan, serta minat industri Anda.
                 </p>
             </div>
             <!-- End Section Title -->
@@ -104,7 +104,7 @@
                         <!-- RINGKASAN INPUT -->
                         <h6 class="mb-3">Ringkasan Input</h6>
                         <div class="row mb-3">
-                            <div class="col-md-6">
+                            <div class="col-md-12">
                                 <ul class="list-group">
                                     <li class="list-group-item d-flex justify-content-between align-items-center">
                                         <span><strong>Minat Akademik</strong></span>
@@ -121,22 +121,27 @@
                                 </ul>
                             </div>
 
-                            <div class="col-md-6">
+                            <div class="col-md-12">
                                 <ul class="list-group">
                                     <li class="list-group-item d-flex justify-content-between align-items-center">
                                         <span><strong>Kemampuan Dominan</strong></span>
                                         <span class="badge bg-success rounded-pill"><?= esc($input['kemampuan']) ?></span>
                                     </li>
-                                    <li class="list-group-item d-flex justify-content-between align-items-center">
-                                        <span><strong>Minat Industri</strong></span>
-                                        <span class="badge bg-warning text-dark rounded-pill"><?= esc($industriDisplay) ?></span>
-                                    </li>
+                                    <?php if (!empty($input['industri'])): ?>
+                                        <li class="list-group-item d-flex justify-content-between align-items-center">
+                                            <span><strong>Minat Industri</strong></span>
+                                            <span class="badge bg-warning text-dark rounded-pill">
+                                                <?= esc($industriDisplay) ?>
+                                            </span>
+                                        </li>
+                                    <?php endif; ?>
+
                                 </ul>
                             </div>
                         </div>
 
                         <!-- HASIL -->
-                        <div class="p-3 mb-3 rounded-3" style="background: linear-gradient(90deg,#e6ffed,#f0fff4); border:1px solid #cbecca;">
+                        <div class="p-3 mb-4 rounded-3" style="background: linear-gradient(90deg,#e6ffed,#f0fff4); border:1px solid #cbecca;">
                             <h5 class="mb-2">Rekomendasi Jurusan</h5>
                             <?php
                             // Ensure $hasil is a string (handles arrays or other types safely)
@@ -146,8 +151,9 @@
                             <p class="mb-0" style="font-size:1.05rem;"><?= nl2br($hasilEsc) ?></p>
                         </div>
 
-                        <div class="d-flex gap-2 align-items-center mb-3">
-                            <a href="/form" class="btn btn-outline-secondary">
+                        <div class="d-flex gap-2 align-items-center mb-2">
+                            <a href="<?= site_url('/mulai') ?>" class="btn btn-outline-secondary">
+                                <i class="bi bi-arrow-counterclockwise me-1"></i>
                                 Ulangi Tes
                             </a>
 
@@ -157,15 +163,20 @@
                                 <input type="hidden" name="karir" value="<?= esc($input['karir']) ?>">
                                 <input type="hidden" name="kemampuan" value="<?= esc($input['kemampuan']) ?>">
                                 <input type="hidden" name="industri" value="<?= esc($input['industri']) ?>">
-                                <button type="submit" class="btn btn-success" id="btn-pdf">Unduh PDF</button>
+                                <button type="submit" class="btn btn-success" id="btn-pdf">
+                                    <i class="bi bi-file-earmark-pdf me-1"></i>
+                                    Unduh PDF
+                                </button>
                             </form>
 
                             <a href="/" class="btn btn-primary ms-auto">
+                                <i class="bi bi-house-door me-1"></i>
                                 Kembali ke Beranda
                             </a>
                         </div>
 
-                        <p class="small text-muted">Catatan: Tombol "Unduh PDF" menghasilkan file PDF otomatis jika <strong>Dompdf</strong> sudah terpasang pada server (composer package <code>dompdf/dompdf</code>). Jika belum terpasang, klik tombol akan membuka versi yang dapat dicetak — Anda bisa menyimpannya menggunakan "Save as PDF" di dialog cetak browser.</p>
+
+                        <!-- <p class="small text-muted">Catatan: Tombol "Unduh PDF" menghasilkan file PDF otomatis jika <strong>Dompdf</strong> sudah terpasang pada server (composer package <code>dompdf/dompdf</code>). Jika belum terpasang, klik tombol akan membuka versi yang dapat dicetak — Anda bisa menyimpannya menggunakan "Save as PDF" di dialog cetak browser.</p> -->
 
                     </div>
                 </div>
@@ -175,87 +186,6 @@
         </section><!-- /Faq 2 Section -->
 
     </main>
-
-
-    <footer id="footer" class="footer">
-
-        <!-- <div class="footer-newsletter">
-            <div class="container">
-                <div class="row justify-content-center text-center">
-                    <div class="col-lg-6">
-                        <h4>Join Our Newsletter</h4>
-                        <p>Subscribe to our newsletter and receive the latest news about our products and services!</p>
-                        <form action="forms/newsletter.php" method="post" class="php-email-form">
-                            <div class="newsletter-form"><input type="email" name="email"><input type="submit" value="Subscribe"></div>
-                            <div class="loading">Loading</div>
-                            <div class="error-message"></div>
-                            <div class="sent-message">Your subscription request has been sent. Thank you!</div>
-                        </form>
-                    </div>
-                </div>
-            </div>
-        </div> -->
-
-        <!-- <div class="container footer-top">
-            <div class="row gy-4">
-                <div class="col-lg-4 col-md-6 footer-about">
-                    <a href="index.html" class="d-flex align-items-center">
-                        <span class="sitename">Arsha</span>
-                    </a>
-                    <div class="footer-contact pt-3">
-                        <p>A108 Adam Street</p>
-                        <p>New York, NY 535022</p>
-                        <p class="mt-3"><strong>Phone:</strong> <span>+1 5589 55488 55</span></p>
-                        <p><strong>Email:</strong> <span>info@example.com</span></p>
-                    </div>
-                </div>
-
-                <div class="col-lg-2 col-md-3 footer-links">
-                    <h4>Useful Links</h4>
-                    <ul>
-                        <li><i class="bi bi-chevron-right"></i> <a href="#">Home</a></li>
-                        <li><i class="bi bi-chevron-right"></i> <a href="#">About us</a></li>
-                        <li><i class="bi bi-chevron-right"></i> <a href="#">Services</a></li>
-                        <li><i class="bi bi-chevron-right"></i> <a href="#">Terms of service</a></li>
-                    </ul>
-                </div>
-
-                <div class="col-lg-2 col-md-3 footer-links">
-                    <h4>Our Services</h4>
-                    <ul>
-                        <li><i class="bi bi-chevron-right"></i> <a href="#">Web Design</a></li>
-                        <li><i class="bi bi-chevron-right"></i> <a href="#">Web Development</a></li>
-                        <li><i class="bi bi-chevron-right"></i> <a href="#">Product Management</a></li>
-                        <li><i class="bi bi-chevron-right"></i> <a href="#">Marketing</a></li>
-                    </ul>
-                </div>
-
-                <div class="col-lg-4 col-md-12">
-                    <h4>Follow Us</h4>
-                    <p>Cras fermentum odio eu feugiat lide par naso tierra videa magna derita valies</p>
-                    <div class="social-links d-flex">
-                        <a href=""><i class="bi bi-twitter-x"></i></a>
-                        <a href=""><i class="bi bi-facebook"></i></a>
-                        <a href=""><i class="bi bi-instagram"></i></a>
-                        <a href=""><i class="bi bi-linkedin"></i></a>
-                    </div>
-                </div>
-
-            </div>
-        </div> -->
-
-        <div class="container text-center mt-4">
-            <p>© <span>Copyright</span> <strong class="px-1 sitename">JurusanKu</strong> <span>All Rights Reserved</span></p>
-            <div class="credits">
-                <!-- All the links in the footer should remain intact. -->
-                <!-- You can delete the links only if you've purchased the pro version. -->
-                <!-- Licensing information: https://bootstrapmade.com/license/ -->
-                <!-- Purchase the pro version with working PHP/AJAX contact form: [buy-url] -->
-                Designed by <a href="https://bootstrapmade.com/">JurusanKu</a> Distributed by <a href="https://themewagon.com" target="_blank">ThemeWagon</a>
-            </div>
-        </div>
-
-    </footer>
 
     <!-- Scroll Top -->
     <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
