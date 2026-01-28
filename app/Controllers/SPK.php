@@ -78,30 +78,27 @@ class SPK extends BaseController
         $service = new DecisionTreeService();
         $hasil = $service->proses($data);
 
-        $viewData = [
+        $html = view('pages/v_hasil_pdf', [
             'hasil' => $hasil,
             'input' => $data
-        ];
+        ]);
 
-        // If Dompdf is installed, generate PDF
-        if (class_exists('\Dompdf\Dompdf')) {
-            $html = view('pages/v_hasil_pdf', $viewData);
-
-            $dompdf = new \Dompdf\Dompdf();
-            $dompdf->loadHtml($html);
-            $dompdf->setPaper('A4', 'portrait');
-            $dompdf->render();
-
-            $output = $dompdf->output();
-
-            return $this->response
-                ->setHeader('Content-Type', 'application/pdf')
-                ->setHeader('Content-Disposition', 'inline; filename="Rekomendasi_Jurusan.pdf"')
-                ->setBody($output);
+        // 🔴 WAJIB: bersihkan output buffer
+        if (ob_get_length()) {
+            ob_end_clean();
         }
 
-        // Fallback: render printable HTML view and instruct user to print to PDF
-        $html = view('pages/v_hasil_pdf', $viewData);
-        return $this->response->setBody($html);
+        $dompdf = new \Dompdf\Dompdf();
+        $dompdf->loadHtml($html);
+        $dompdf->setPaper('A4', 'portrait');
+        $dompdf->render();
+
+        // 🔥 PENTING: gunakan stream(), BUKAN setBody()
+        $dompdf->stream(
+            'Rekomendasi Jurusan Kuliah.pdf',
+            ['Attachment' => false] // false = preview, true = langsung download
+        );
+
+        exit;
     }
 }
