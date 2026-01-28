@@ -9,7 +9,7 @@
   <meta name="keywords" content="">
 
   <!-- Favicons -->
-  <link href="<?= base_url() ?>/assets/img/favicon.png" rel="icon">
+  <link href="<?= base_url() ?>/assets/img/logo1.png" rel="icon">
   <link href="<?= base_url() ?>/assets/img/apple-touch-icon.png" rel="apple-touch-icon">
 
   <!-- Fonts -->
@@ -42,7 +42,7 @@
   <header id="header" class="header d-flex align-items-center fixed-top">
     <div class="container-fluid container-xl position-relative d-flex align-items-center">
 
-      <a href="index.html" class="logo d-flex align-items-center me-auto">
+      <a href="#" class="logo d-flex align-items-center me-auto">
         <!-- Uncomment the line below if you also wish to use an image logo -->
         <!-- <img src="<?= base_url() ?>/assets/img/logo.webp" alt=""> -->
         <h1 class="sitename">JurusanKu</h1>
@@ -52,29 +52,7 @@
         <ul>
           <li><a href="#hero" class="active">Home</a></li>
           <li><a href="#about">About</a></li>
-          <!-- <li><a href="#services">Services</a></li> -->
-          <!-- <li><a href="#portfolio">Portfolio</a></li> -->
           <li><a href="#team">Team</a></li>
-          <!-- <li><a href="#pricing">Pricing</a></li> -->
-          <!-- <li><a href="blog.html">Blog</a></li> -->
-          <!-- <li class="dropdown"><a href="#"><span>Dropdown</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
-            <ul>
-              <li><a href="#">Dropdown 1</a></li>
-              <li class="dropdown"><a href="#"><span>Deep Dropdown</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
-                <ul>
-                  <li><a href="#">Deep Dropdown 1</a></li>
-                  <li><a href="#">Deep Dropdown 2</a></li>
-                  <li><a href="#">Deep Dropdown 3</a></li>
-                  <li><a href="#">Deep Dropdown 4</a></li>
-                  <li><a href="#">Deep Dropdown 5</a></li>
-                </ul>
-              </li>
-              <li><a href="#">Dropdown 2</a></li>
-              <li><a href="#">Dropdown 3</a></li>
-              <li><a href="#">Dropdown 4</a></li>
-            </ul>
-          </li> -->
-          <li><a href="#contact">Contact</a></li>
         </ul>
         <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
       </nav>
@@ -153,14 +131,13 @@
             }
           </script>
           <div class="swiper-wrapper align-items-center">
-            <div class="swiper-slide"><img src="<?= base_url() ?>/assets/img/clients/clients-1.webp" class="img-fluid" alt=""></div>
-            <div class="swiper-slide"><img src="<?= base_url() ?>/assets/img/clients/clients-2.webp" class="img-fluid" alt=""></div>
-            <div class="swiper-slide"><img src="<?= base_url() ?>/assets/img/clients/clients-3.webp" class="img-fluid" alt=""></div>
-            <div class="swiper-slide"><img src="<?= base_url() ?>/assets/img/clients/clients-4.webp" class="img-fluid" alt=""></div>
-            <div class="swiper-slide"><img src="<?= base_url() ?>/assets/img/clients/clients-5.webp" class="img-fluid" alt=""></div>
-            <div class="swiper-slide"><img src="<?= base_url() ?>/assets/img/clients/clients-6.webp" class="img-fluid" alt=""></div>
-            <div class="swiper-slide"><img src="<?= base_url() ?>/assets/img/clients/clients-7.webp" class="img-fluid" alt=""></div>
-            <div class="swiper-slide"><img src="<?= base_url() ?>/assets/img/clients/clients-8.webp" class="img-fluid" alt=""></div>
+            <div class="swiper-slide"><img src="<?= base_url() ?>/assets/img/SPK/1.png" class="img-fluid" alt="" style="width: 100%; height: 37px; object-fit: cover;"></div>
+            <div class="swiper-slide"><img src="<?= base_url() ?>/assets/img/SPK/2.png" class="img-fluid" alt="" style="width: 100%; height: 37px; object-fit: cover;"></div>
+            <div class="swiper-slide"><img src="<?= base_url() ?>/assets/img/SPK/3.png" class="img-fluid" alt="" style="width: 100%; height: 37px; object-fit: cover;"></div>
+            <div class="swiper-slide"><img src="<?= base_url() ?>/assets/img/SPK/4.png" class="img-fluid" alt="" style="width: 100%; height: 37px; object-fit: cover;"></div>
+            <div class="swiper-slide"><img src="<?= base_url() ?>/assets/img/SPK/5.png" class="img-fluid" alt="" style="width: 100%; height: 37px; object-fit: cover;"></div>
+            <div class="swiper-slide"><img src="<?= base_url() ?>/assets/img/SPK/6.png" class="img-fluid" alt="" style="width: 100%; height: 37px; object-fit: cover;"></div>
+            <div class="swiper-slide"><img src="<?= base_url() ?>/assets/img/SPK/7.png" class="img-fluid" alt="" style="width: 100%; height: 37px; object-fit: cover;"></div>
           </div>
         </div>
 
@@ -367,7 +344,7 @@
               </div>
               <div class="steps-content">
                 <div class="steps-number">02</div>
-                <h3>Analisis & Perhitungan SPK</h3>
+                <h3>Analisis & Perhitungan Sistem Penunjang Keputusan</h3>
                 <p>
                   Sistem melakukan pengolahan data berdasarkan metode pohon keputusan yang
                   telah ditentukan untuk menghasilkan rekomendasi jurusan yang preferensi setiap jurusan
@@ -470,7 +447,7 @@
           <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
             <div class="team-member d-flex align-items-start">
               <div class="pic">
-                <img src="<?= base_url() ?>/assets/img/person/person-f-4.webp" class="img-fluid" alt="Programmer">
+                <img src="<?= base_url() ?>/assets/img/person/perempuan.png" class="img-fluid" alt="Programmer">
               </div>
               <div class="member-info">
                 <h4>Erianti Zahara</h4>
@@ -480,11 +457,6 @@
                   implementasi logika rekomendasi jurusan, serta integrasi frontend
                   dan backend agar sistem berjalan optimal.
                 </p>
-                <!-- <div class="social">
-                  <a href="#"><i class="bi bi-github"></i></a>
-                  <a href="#"><i class="bi bi-instagram"></i></a>
-                  <a href="#"><i class="bi bi-linkedin"></i></a>
-                </div> -->
               </div>
             </div>
           </div><!-- End Team Member -->
@@ -493,7 +465,7 @@
           <div class="col-lg-6" data-aos="fade-up" data-aos-delay="200">
             <div class="team-member d-flex align-items-start">
               <div class="pic">
-                <img src="<?= base_url() ?>/assets/img/person/person-f-8.webp" class="img-fluid" alt="Programmer">
+                <img src="<?= base_url() ?>/assets/img/person/perempuan.png" class="img-fluid" alt="Programmer">
               </div>
               <div class="member-info">
                 <h4>Zara Ayunda</h4>
@@ -511,7 +483,7 @@
           <div class="col-lg-6" data-aos="fade-up" data-aos-delay="300">
             <div class="team-member d-flex align-items-start">
               <div class="pic">
-                <img src="<?= base_url() ?>/assets/img/person/person-f-12.webp" class="img-fluid" alt="UI Designer">
+                <img src="<?= base_url() ?>/assets/img/person/perempuan.png" class="img-fluid" alt="UI Designer">
               </div>
               <div class="member-info">
                 <h4>Debora Septiani Daeli</h4>
@@ -529,7 +501,7 @@
           <div class="col-lg-6" data-aos="fade-up" data-aos-delay="400">
             <div class="team-member d-flex align-items-start">
               <div class="pic">
-                <img src="<?= base_url() ?>/assets/img/person/person-m-7.webp" class="img-fluid" alt="System Analyst">
+                <img src="<?= base_url() ?>/assets/img/person/laki-laki.png" class="img-fluid" alt="System Analyst">
               </div>
               <div class="member-info">
                 <h4>Muhammad Riski Illahi</h4>
@@ -549,162 +521,9 @@
 
     </section><!-- /Team Section -->
 
-    <!-- Contact Section -->
-    <section id="contact" class="contact section">
-
-      <!-- Section Title -->
-      <div class="container section-title" data-aos="fade-up">
-        <h2>Contact</h2>
-        <p> Hubungi kami untuk mendapatkan informasi lebih lanjut, menyampaikan pertanyaan,
-          atau memberikan masukan terkait sistem rekomendasi jurusan kuliah yang kami kembangkan</p>
-      </div><!-- End Section Title -->
-
-      <div class="container" data-aos="fade-up" data-aos-delay="100">
-
-        <div class="row gy-4">
-
-          <div class="col-lg-5">
-
-            <div class="info-wrap">
-              <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="200">
-                <i class="bi bi-geo-alt flex-shrink-0"></i>
-                <div>
-                  <h3>Address</h3>
-                  <p>Jl. Damar No.69 E Padang, Sumatera Barat</p>
-                </div>
-              </div><!-- End Info Item -->
-
-              <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="300">
-                <i class="bi bi-telephone flex-shrink-0"></i>
-                <div>
-                  <h3>Call Us</h3>
-                  <p>081234567890</p>
-                </div>
-              </div><!-- End Info Item -->
-
-              <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="400">
-                <i class="bi bi-envelope flex-shrink-0"></i>
-                <div>
-                  <h3>Email Us</h3>
-                  <p>jurusanku@gmail.com</p>
-                </div>
-              </div><!-- End Info Item -->
-
-              <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d48389.78314118045!2d-74.006138!3d40.710059!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25a22a3bda30d%3A0xb89d1fe6bc499443!2sDowntown%20Conference%20Center!5e0!3m2!1sen!2sus!4v1676961268712!5m2!1sen!2sus" frameborder="0" style="border:0; width: 100%; height: 270px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-            </div>
-          </div>
-
-          <div class="col-lg-7">
-            <form action="forms/contact.php" method="post" class="php-email-form" data-aos="fade-up" data-aos-delay="200">
-              <div class="row gy-4">
-
-                <div class="col-md-6">
-                  <label for="name-field" class="pb-2">Your Name</label>
-                  <input type="text" name="name" id="name-field" class="form-control" required="">
-                </div>
-
-                <div class="col-md-6">
-                  <label for="email-field" class="pb-2">Your Email</label>
-                  <input type="email" class="form-control" name="email" id="email-field" required="">
-                </div>
-
-                <div class="col-md-12">
-                  <label for="subject-field" class="pb-2">Subject</label>
-                  <input type="text" class="form-control" name="subject" id="subject-field" required="">
-                </div>
-
-                <div class="col-md-12">
-                  <label for="message-field" class="pb-2">Message</label>
-                  <textarea class="form-control" name="message" rows="10" id="message-field" required=""></textarea>
-                </div>
-
-                <div class="col-md-12 text-center">
-                  <div class="loading">Loading</div>
-                  <div class="error-message"></div>
-                  <div class="sent-message">Your message has been sent. Thank you!</div>
-
-                  <button type="submit">Send Message</button>
-                </div>
-
-              </div>
-            </form>
-          </div><!-- End Contact Form -->
-
-        </div>
-
-      </div>
-
-    </section><!-- /Contact Section -->
-
   </main>
 
   <footer id="footer" class="footer">
-
-    <!-- <div class="footer-newsletter">
-      <div class="container">
-        <div class="row justify-content-center text-center">
-          <div class="col-lg-6">
-            <h4>Join Our Newsletter</h4>
-            <p>Subscribe to our newsletter and receive the latest news about our products and services!</p>
-            <form action="forms/newsletter.php" method="post" class="php-email-form">
-              <div class="newsletter-form"><input type="email" name="email"><input type="submit" value="Subscribe"></div>
-              <div class="loading">Loading</div>
-              <div class="error-message"></div>
-              <div class="sent-message">Your subscription request has been sent. Thank you!</div>
-            </form>
-          </div>
-        </div>
-      </div>
-    </div> -->
-
-    <div class="container footer-top">
-      <div class="row gy-4">
-        <div class="col-lg-4 col-md-6 footer-about">
-          <a href="index.html" class="d-flex align-items-center">
-            <span class="sitename">JurusanKu</span>
-          </a>
-          <div class="footer-contact pt-3">
-            <p>Jl. Damar No.69 E</p>
-            <p>Padang, Sumatera Barat</p>
-            <p class="mt-3"><strong>Phone:</strong> <span>081234567890</span></p>
-            <p><strong>Email:</strong> <span>jurusanku@gmail.com</span></p>
-          </div>
-        </div>
-
-        <div class="col-lg-4 col-md-3 footer-links">
-          <h4>Useful Links</h4>
-          <ul>
-            <li><i class="bi bi-chevron-right"></i> <a href="#hero">Home</a></li>
-            <li><i class="bi bi-chevron-right"></i> <a href="#about">About</a></li>
-            <!-- <li><i class="bi bi-chevron-right"></i> <a href="#portfolio">Portfolio</a></li> -->
-            <li><i class="bi bi-chevron-right"></i> <a href="#team">Team</a></li>
-          </ul>
-        </div>
-
-        <!-- <div class="col-lg-2 col-md-3 footer-links">
-          <h4>Our Services</h4>
-          <ul>
-            <li><i class="bi bi-chevron-right"></i> <a href="#">Web Design</a></li>
-            <li><i class="bi bi-chevron-right"></i> <a href="#">Web Development</a></li>
-            <li><i class="bi bi-chevron-right"></i> <a href="#">Product Management</a></li>
-            <li><i class="bi bi-chevron-right"></i> <a href="#">Marketing</a></li>
-          </ul>
-        </div> -->
-
-        <div class="col-lg-4 col-md-12">
-          <h4>Follow Us</h4>
-          <p> Dapatkan informasi dan pembaruan terbaru seputar sistem rekomendasi
-            jurusan kuliah melalui media sosial kami</p>
-          <div class="social-links d-flex">
-            <a href=""><i class="bi bi-twitter-x"></i></a>
-            <a href=""><i class="bi bi-facebook"></i></a>
-            <a href=""><i class="bi bi-instagram"></i></a>
-            <a href=""><i class="bi bi-linkedin"></i></a>
-          </div>
-        </div>
-
-      </div>
-    </div>
 
     <div class="container copyright text-center mt-4">
       <p>© <span>Copyright</span> <strong class="px-1 sitename">JurusanKu</strong> <span>All Rights Reserved</span></p>
@@ -713,7 +532,7 @@
         <!-- You can delete the links only if you've purchased the pro version. -->
         <!-- Licensing information: https://bootstrapmade.com/license/ -->
         <!-- Purchase the pro version with working PHP/AJAX contact form: [buy-url] -->
-        Designed by <a href="https://bootstrapmade.com/">JurusanKu</a> Distributed by <a href="https://themewagon.com" target="_blank">ThemeWagon</a>
+        Designed by <a href="https://bootstrapmade.com/">JurusanKu</a>
       </div>
     </div>
 
